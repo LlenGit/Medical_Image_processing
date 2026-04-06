@@ -49,7 +49,7 @@ MetricFormulaAccuracy(TP + TN) / (TP + TN + FP + FN)SensitivityTP / (TP + FN)Spe
 └── README.md
 
 **Installation**
-bashgit clone https://github.com/yourusername/brain-tumor-detection-segmentation.git
+bashgit clone https://github.com/LlenGit/Medical_Image_processing
 cd brain-tumor-detection-segmentation
 pip install -r requirements.txt
 Requirements
