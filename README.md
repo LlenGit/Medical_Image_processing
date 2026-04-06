@@ -2,9 +2,9 @@
 A two-stage deep learning pipeline that automatically detects and localizes brain tumors from MRI scans using ResNet50 for classification and ResUNet for segmentation.
 
 **Overview**
-Manual analysis of MRI scans is time-consuming and prone to human error. This project automates the process using a two-stage deep learning approach:
+Manual analysis of MRI scans is time-consuming and prone to human error. This project automates the process using a two-stage deep learning approach:\
 
-Stage 1 — Classification: A fine-tuned ResNet50 model detects whether a tumor is present in the MRI scan.
+Stage 1 — Classification: A fine-tuned ResNet50 model detects whether a tumor is present in the MRI scan.\
 Stage 2 — Segmentation: A custom ResUNet model precisely localizes and delineates the tumor region at the pixel level.
 
 
