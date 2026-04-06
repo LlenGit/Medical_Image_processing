@@ -77,10 +77,18 @@ python# Load models and run prediction\
 image_id, mask, has_mask = prediction(test_df, model, model_seg)\
 
 **Results**
-ModelMetricScoreResNet50 ClassifierAccuracy- 0.9792%\
-ResNet50 ClassifierSensitivity- 0.9531%\
-ResNet50 ClassifierSpecificity- 0.9922%\
-ResNet50 ClassifierF1 Score- 0.9683%\
+ModelMetricScoreResNet50:\
+ClassifierAccuracy                : 0.9792%\
+ResNet50 ClassifierSensitivity    : 0.9531%\
+ResNet50 ClassifierSpecificity    : 0.9922%\
+ResNet50 ClassifierF1 Score       : 0.9683%\
+
+Segment_ResNetScore:\
+Pixel-level Accuracy    : 0.9928\
+Sensitivity             : 0.9431\
+Specificity             : 0.9934\
+F1 Score (Dice)         : 0.7582\
+Tversky Index (α=0.7)   : 0.8227\
 
 <img width="1014" height="470" alt="image" src="https://github.com/user-attachments/assets/91b1000f-4d1c-4659-bc0a-85da2b7a0bc9" />
 <img width="1012" height="465" alt="image" src="https://github.com/user-attachments/assets/90c93212-faa3-478b-98af-a10278ab34a4" />
