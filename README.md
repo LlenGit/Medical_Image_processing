@@ -16,15 +16,15 @@ Binary labels: 0 = No Tumor, 1 = Tumor
 
 
 **Model Architecture**
-Stage 1 — ResNet50 Classifier\
+Stage 1 — ResNet50 Classifier
 
 Pretrained on ImageNet\
 Custom classification head with Dense, Dropout layers\
 Output: 2-class softmax (tumor / no tumor)\
 Loss: Categorical Cross-Entropy\
-Optimizer: Adam\
+Optimizer: Adam
 
-Stage 2 — ResUNet Segmentation\
+Stage 2 — ResUNet Segmentation
 
 Hybrid of ResNet residual blocks + UNet encoder-decoder structure\
 Skip connections for precise spatial localization\
@@ -63,32 +63,32 @@ matplotlib\
 seaborn\
 plotly\
 Pillow\
-keras_preprocessing\
+keras_preprocessing
 
 **Usage**
 
 Download the dataset from Kaggle\
 Place the dataset in the appropriate directory\
 Run notebook.ipynb end to end\
-Trained weights are saved automatically after training\
+Trained weights are saved automatically after training
 
 To run inference on a single MRI image:\
 python# Load models and run prediction\
-image_id, mask, has_mask = prediction(test_df, model, model_seg)\
+image_id, mask, has_mask = prediction(test_df, model, model_seg)
 
 **Results**
 ModelMetricScoreResNet50:\
 ClassifierAccuracy                : 0.9792%\
 ResNet50 ClassifierSensitivity    : 0.9531%\
 ResNet50 ClassifierSpecificity    : 0.9922%\
-ResNet50 ClassifierF1 Score       : 0.9683%\
+ResNet50 ClassifierF1 Score       : 0.9683%
 
 Segment_ResNetScore:\
 Pixel-level Accuracy    : 0.9928\
 Sensitivity             : 0.9431\
 Specificity             : 0.9934\
 F1 Score (Dice)         : 0.7582\
-Tversky Index (α=0.7)   : 0.8227\
+Tversky Index (α=0.7)   : 0.8227
 
 <img width="1014" height="470" alt="image" src="https://github.com/user-attachments/assets/91b1000f-4d1c-4659-bc0a-85da2b7a0bc9" />
 <img width="1012" height="465" alt="image" src="https://github.com/user-attachments/assets/90c93212-faa3-478b-98af-a10278ab34a4" />
@@ -104,8 +104,8 @@ Focal Tversky Loss=(1−Tversky)γ,γ=0.75\text{Focal Tversky Loss} = (1 - \te
 
 Dataset: Mateusz Buda — Kaggle\
 Focal Tversky Loss: nabsabraham/focal-tversky-unet\
-ResNet Paper: Deep Residual Learning for Image Recognition\
+ResNet Paper: Deep Residual Learning for Image Recognition
 
 *Academic Use Only*
 All required external links are given in the main notebook.\
-Built as part of a thesis project on deep learning applications in medical imaging.\
+Built as part of a thesis project on deep learning applications in medical imaging.
