@@ -99,4 +99,5 @@ Focal Tversky Loss: nabsabraham/focal-tversky-unet
 ResNet Paper: Deep Residual Learning for Image Recognition
 
 *Academic Use Only*
+All required external links are given in the main notebook.
 Built as part of a thesis project on deep learning applications in medical imaging.
