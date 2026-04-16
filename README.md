@@ -9,7 +9,7 @@ Stage 2 — Segmentation: A custom ResUNet model precisely localizes and delinea
 
 
 **Dataset**
-
+Link: https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation \
 Source: LGG MRI Segmentation Dataset — Kaggle\
 Brain MRI images paired with ground truth tumor masks\
 Binary labels: 0 = No Tumor, 1 = Tumor
